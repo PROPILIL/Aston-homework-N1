@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">Homework1_2</string>
+    <string name="app_name">Dice Roller</string>
+    <string name="click_text_view">Click the button bellow to roll the dice!</string>
+    <string name="roll_button">CLICK</string>
+    <string name="dice_side">0</string>
 </resources>
