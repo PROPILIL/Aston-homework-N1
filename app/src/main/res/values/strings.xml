@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Dice Roller</string>
     <string name="click_text_view">Click the button bellow to roll the dice!</string>
-    <string name="roll_button">CLICK</string>
+    <string name="roll_button_start">START</string>
+    <string name="roll_button_stop">STOP</string>
     <string name="dice_side">0</string>
 </resources>
