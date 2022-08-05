@@ -49,28 +49,4 @@ class MainActivity : AppCompatActivity() {
 
         }
     }
-
-    override fun onSaveInstanceState(outState: Bundle) {
-        outState.run {
-            putInt(COUNTER_KEY, counter)
-            putString(TEXT_BUTTON_KEY, rollButton.text.toString())
-            putBoolean(ROLL_FLAG_STATE, rollFlag)
-        }
-        super.onSaveInstanceState(outState)
-    }
-
-    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
-        savedInstanceState.run {
-            diceSide.text = getInt(COUNTER_KEY).toString()
-            rollButton.text = getString(TEXT_BUTTON_KEY)
-            rollFlag = getBoolean(ROLL_FLAG_STATE)
-        }
-        super.onRestoreInstanceState(savedInstanceState)
-    }
-
-    companion object {
-        private const val COUNTER_KEY = "COUNTER_KEY"
-        private const val TEXT_BUTTON_KEY = "TEXT_BUTTON_KEY"
-        private const val ROLL_FLAG_STATE = "ROLL_FLAG_STATE"
-    }
 }
